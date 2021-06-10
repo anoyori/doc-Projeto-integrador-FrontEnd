@@ -174,12 +174,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(temaService: <a href="../injectables/TemaService.html">TemaService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+<code>constructor(temaService: <a href="../injectables/TemaService.html">TemaService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, alertas: <a href="../injectables/AlertasService.html">AlertasService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -232,6 +232,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>alertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -272,8 +284,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="37"
-                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:37</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:39</a></div>
                 </td>
             </tr>
 
@@ -311,8 +323,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:33</a></div>
                 </td>
             </tr>
 
@@ -381,8 +393,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:25</a></div>
                 </td>
             </tr>
 
@@ -424,7 +436,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -456,7 +468,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/delete/tema-delete/tema-delete.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -472,6 +484,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
 import { Tema } from &#x27;src/app/model/Tema&#x27;;
+import { AlertasService } from &#x27;src/app/service/alertas.service&#x27;;
 import { TemaService } from &#x27;src/app/service/tema.service&#x27;;
 import { environment } from &#x27;src/environments/environment.prod&#x27;;
 
@@ -488,7 +501,8 @@ export class TemaDeleteComponent implements OnInit {
   constructor(
     private temaService: TemaService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -507,7 +521,7 @@ export class TemaDeleteComponent implements OnInit {
 
    apagar(){
      this.temaService.deleteTema(this.idTema).subscribe(()&#x3D;&gt;{
-     alert(&#x27;Tema apagado com sucesso!&#x27;)
+     this.alertas.showAlertInfo(&#x27;Tema apagado com sucesso!&#x27;)
      this.router.navigate([&#x27;/tema&#x27;])
      })
    }
@@ -578,7 +592,7 @@ export class TemaDeleteComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="container mb-5 mt-5">    <div class="row mb-5">        <div class="col-md-12">            <h1 class="text-center text-secondary">Apagar Tema</h1>        </div>    </div>    <div class="row mb-3">        <div class="col-md-12">            <h4 class="text-center text-secondary">Você tem certeza que deseja apagar esse tema? Todas as postagens                relacionadas a ele serão                igualmente apagadas.</h4>        </div>    </div>    <div class="row d-flex justify-content-center">        <div class="col-md-4">            <h5 class="text-center text-primary">Tema: {{tema.descricao}}</h5>        </div>    </div>    <div class="row mb-4">        <div class="col-md-12 d-flex justify-content-center">            <button class="btn btn-danger mr-4" routerLink=\'/tema\'>Não</button>            <button class="btn btn-success" style="background-color: #8dba45" (click)=\'apagar()\'>Sim</button>        </div>    </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'TemaDeleteComponent'};
 </script>

@@ -180,12 +180,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(authService: <a href="../injectables/AuthService.html">AuthService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(authService: <a href="../injectables/AuthService.html">AuthService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, alertas: <a href="../injectables/AlertasService.html">AlertasService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:15</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -219,6 +219,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -266,8 +278,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="35"
-                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:35</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:37</a></div>
                 </td>
             </tr>
 
@@ -305,8 +317,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="27"
-                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:27</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:29</a></div>
                 </td>
             </tr>
 
@@ -375,8 +387,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="23"
-                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:23</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:25</a></div>
                 </td>
             </tr>
 
@@ -414,8 +426,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="31"
-                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:31</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:33</a></div>
                 </td>
             </tr>
 
@@ -488,7 +500,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:14</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:15</a></div>
                             </td>
                         </tr>
 
@@ -515,7 +527,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:15</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -547,7 +559,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/cadastrar/cadastrar.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -563,6 +575,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 import { User } from &#x27;../model/User&#x27;;
+import { AlertasService } from &#x27;../service/alertas.service&#x27;;
 import { AuthService } from &#x27;../service/auth.service&#x27;;
 
 @Component({
@@ -579,7 +592,8 @@ export class CadastrarComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -598,14 +612,14 @@ export class CadastrarComponent implements OnInit {
     this.user.tipo &#x3D; this.tipoUsuario
 
     if(this.user.senha !&#x3D; this.confirmarSenha){
-      alert(&#x27;As senhas estão incorretas!&#x27;)
+      this.alertas.showAlertDanger(&#x27;As senhas estão incorretas!&#x27;)
     }
 
     else{
       this.authService.cadastrar(this.user).subscribe((resp: User) &#x3D;&gt; {
         this.user &#x3D; resp
         this.router.navigate([&#x27;/entrar&#x27;])
-        alert(&#x27;Usuário cadastrado com sucesso!&#x27;)
+        this.alertas.showAlertSuccess(&#x27;Usuário cadastrado com sucesso!&#x27;)
       })
     }
   }
@@ -746,7 +760,7 @@ export class CadastrarComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="container-fluid" id="img-bg">    <div class="row d-flex justify-content-center">              <div class="col-md-6 glass m-5">            <h1 class="text-center mb-3 py-4 font-desc"> Cadastro</h1>                    <div class="row d-flex justify-content-center">                <div class="col-md-6">                            <div class="form-group">                        <label for="nome">Nome</label>                        <input [(ngModel)]="user.nome" class="form-control" type="text" name="nome" id="nome" placeholder="Nome">                    </div>                    <div class="form-group">                        <label for="usuario">Usuário</label>                        <input [(ngModel)]="user.usuario" class="form-control" type="text" name="usuario" id="usuario" placeholder="Usuário">                    </div>                    <div class="form-group">                        <label for="foto">Link da foto</label>                        <input [(ngModel)]="user.foto" class="form-control" type="text" name="foto" id="foto" placeholder="Link da foto">                    </div>                        <div class="form-group">                        <label for="senha">Senha</label>                        <input (input)=\'confirmSenha($event)\' class="form-control" type="password" name="senha" id="senha" placeholder="Senha">                    </div>                    <div class="form-group">                        <label for="ConfirmeSenha">Confirmar senha</label>                        <input [(ngModel)]="user.senha"  class="form-control" type="password" name="Confirmar senha" id="Confirmar senha"                         placeholder="Confirmar senha">                    </div>                    <div class="form-group">                        <label for="ConfirmeSenha">Tipo de usuário</label>                      <select class="form-control" name="tipo" id="tipo" (change)=\'tipoUser($event)\'>                          <option> selecione um tipo de usuário</option>                          <option value="normal"> Normal </option>                          <option value="admin"> Administrador </option>                      </select>                    </div>                <div class="d-flex justify-content-center">                <button type="submit" class="btn btn-danger mt-4 m-4" routerLink=\'/entrar\'>Cancelar</button>                <button type="submit" class="btn btn-success mt-4 m-4" style="background-color: #8dba45" (click)=\'cadastrar()\' routerLink=\'/entrar\'>Cadastrar</button>            </div>            <hr class="mt-4 mb-4">            <p class="text-center">                Ja tem uma conta? <a href="" routerLink=\'/entrar\'>Entre</a>            </p>                        </div>            </div>                </div>              <!--   <div class="col-md-6 mr-4 d-flex align-items-center" >             <h3 class="font-desc">  <br> Rango pratodes <br> rede social                voltada para: <br> o combate a fome                <br> e agricultura  sustentavel!</h3>        </div>     -->    </div>        </div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'CadastrarComponent'};
 </script>

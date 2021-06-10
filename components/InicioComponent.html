@@ -136,16 +136,28 @@
                                 <a href="#idUser">idUser</a>
                             </li>
                             <li>
+                                <a href="#key">key</a>
+                            </li>
+                            <li>
                                 <a href="#listasPostagens">listasPostagens</a>
                             </li>
                             <li>
                                 <a href="#listaTemas">listaTemas</a>
                             </li>
                             <li>
+                                <a href="#nomeTema">nomeTema</a>
+                            </li>
+                            <li>
                                 <a href="#postagem">postagem</a>
                             </li>
                             <li>
+                                <a href="#reverse">reverse</a>
+                            </li>
+                            <li>
                                 <a href="#tema">tema</a>
+                            </li>
+                            <li>
+                                <a href="#tituloPost">tituloPost</a>
                             </li>
                             <li>
                                 <a href="#user">user</a>
@@ -167,6 +179,12 @@
                             </li>
                             <li>
                                 <a href="#findByIdUser">findByIdUser</a>
+                            </li>
+                            <li>
+                                <a href="#findByNomeTema">findByNomeTema</a>
+                            </li>
+                            <li>
+                                <a href="#findByTituloPostagem">findByTituloPostagem</a>
                             </li>
                             <li>
                                 <a href="#getAllPostagens">getAllPostagens</a>
@@ -201,12 +219,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, postagemService: <a href="../injectables/PostagemService.html">PostagemService</a>, temaService: <a href="../injectables/TemaService.html">TemaService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>)</code>
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, postagemService: <a href="../injectables/PostagemService.html">PostagemService</a>, temaService: <a href="../injectables/TemaService.html">TemaService</a>, authService: <a href="../injectables/AuthService.html">AuthService</a>, alertas: <a href="../injectables/AlertasService.html">AlertasService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/inicio/inicio.component.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/inicio/inicio.component.ts:29</a></div>
                             </td>
                         </tr>
 
@@ -271,6 +289,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>alertas</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertasService.html" target="_self" >AlertasService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -311,8 +341,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="50"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:50</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:56</a></div>
                 </td>
             </tr>
 
@@ -350,8 +380,86 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="63"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:63</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByNomeTema"></a>
+                    <span class="name">
+                        <b>
+                            findByNomeTema
+                        </b>
+                        <a href="#findByNomeTema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByNomeTema()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findByTituloPostagem"></a>
+                    <span class="name">
+                        <b>
+                            findByTituloPostagem
+                        </b>
+                        <a href="#findByTituloPostagem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findByTituloPostagem()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:95</a></div>
                 </td>
             </tr>
 
@@ -389,8 +497,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="55"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:55</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:61</a></div>
                 </td>
             </tr>
 
@@ -428,8 +536,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="43"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:43</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:49</a></div>
                 </td>
             </tr>
 
@@ -467,8 +575,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="33"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:33</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:39</a></div>
                 </td>
             </tr>
 
@@ -506,8 +614,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="73"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:73</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:79</a></div>
                 </td>
             </tr>
 
@@ -545,8 +653,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="70"
-                            class="link-to-prism">src/app/inicio/inicio.component.ts:70</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/inicio/inicio.component.ts:76</a></div>
                 </td>
             </tr>
 
@@ -614,7 +722,39 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/inicio/inicio.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/inicio/inicio.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="key"></a>
+                        <span class="name">
+                            <b>
+                            key</b>
+                            <a href="#key"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;data&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/inicio/inicio.component.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -641,7 +781,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/inicio/inicio.component.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/inicio/inicio.component.ts:23</a></div>
                             </td>
                         </tr>
 
@@ -669,6 +809,33 @@
                         <tr>
                             <td class="col-md-4">
                                     <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/inicio/inicio.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nomeTema"></a>
+                        <span class="name">
+                            <b>
+                            nomeTema</b>
+                            <a href="#nomeTema"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/inicio/inicio.component.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -711,6 +878,32 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="reverse"></a>
+                        <span class="name">
+                            <b>
+                            reverse</b>
+                            <a href="#reverse"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/inicio/inicio.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="tema"></a>
                         <span class="name">
                             <b>
@@ -743,6 +936,33 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="tituloPost"></a>
+                        <span class="name">
+                            <b>
+                            tituloPost</b>
+                            <a href="#tituloPost"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/inicio/inicio.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="user"></a>
                         <span class="name">
                             <b>
@@ -764,7 +984,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/inicio/inicio.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/inicio/inicio.component.ts:25</a></div>
                             </td>
                         </tr>
 
@@ -777,14 +997,15 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PostagemService } from &#x27;./../service/postagem.service&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 import { environment } from &#x27;src/environments/environment.prod&#x27;;
 import { Postagem } from &#x27;../model/Postagem&#x27;;
 import { Tema } from &#x27;../model/Tema&#x27;;
 import { User } from &#x27;../model/User&#x27;;
+import { AlertasService } from &#x27;../service/alertas.service&#x27;;
 import { AuthService } from &#x27;../service/auth.service&#x27;;
-import { PostagemService } from &#x27;../service/postagem.service&#x27;;
 import { TemaService } from &#x27;../service/tema.service&#x27;;
 
 @Component({
@@ -797,15 +1018,21 @@ export class InicioComponent implements OnInit {
   postagem: Postagem &#x3D; new Postagem()
   listaTemas: Tema []
   idTema: number
+  nomeTema: string
   listasPostagens: Postagem[]
+  tituloPost: string
   user: User &#x3D; new User()
   idUser &#x3D; environment.id
+
+key &#x3D; &#x27;data&#x27;
+reverse &#x3D; true
 
   constructor(
     private router: Router,
     private postagemService: PostagemService,
     private temaService: TemaService,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertas: AlertasService
   ){}
   
   ngOnInit() {
@@ -857,11 +1084,33 @@ export class InicioComponent implements OnInit {
     console.log(this.postagem)
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) &#x3D;&gt; {
       this.postagem &#x3D; resp
-      alert(&#x27;Postagem realizada com sucesso!&#x27;)
+      this.alertas.showAlertSuccess(&#x27;Postagem realizada com sucesso!&#x27;)
       this.postagem &#x3D; new Postagem()
       this.getAllPostagens()
       console.log(&#x27;postagens: funcionei&#x27;)
     })
+  }
+
+  findByTituloPostagem(){
+    
+    if(this.tituloPost &#x3D;&#x3D; &#x27;&#x27;){
+      this.getAllPostagens()
+    } else{
+      this.postagemService.getbyTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])&#x3D;&gt;{
+        this.listasPostagens &#x3D; resp
+      })
+    }
+    
+  }
+
+  findByNomeTema(){
+    if(this.nomeTema &#x3D;&#x3D; &#x27;&#x27;){
+      this.getAllTemas()
+    } else{
+      this.temaService.getByNomeTema(this.nomeTema).subscribe((resp: Tema[])&#x3D;&gt; {
+        this.listaTemas &#x3D; resp
+      })
+    }
   }
 }
 
@@ -881,6 +1130,7 @@ export class InicioComponent implements OnInit {
                   &lt;div class&#x3D;&quot;row justify-content-center&quot;&gt;
                       &lt;button class&#x3D;&quot;btn btn-light mt-4 mb-4&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#novaPostagem&quot;&gt;Nova Postagem&lt;/button&gt;
                       &lt;a class&#x3D;&quot;btn btn-outline-light mt-4 ml-3 mb-4&quot; href&#x3D;&quot;#postagens&quot;&gt;Ver Postagens&lt;/a&gt;
+                     &lt;!--  *ngIf&#x3D;&#x27;authService.adm()&#x27; --&gt;
                   &lt;/div&gt;
               &lt;/div&gt;
           &lt;/div&gt;
@@ -900,10 +1150,13 @@ export class InicioComponent implements OnInit {
     &lt;/nav&gt;
     &lt;div class&#x3D;&quot;tab-content mt-5&quot; id&#x3D;&quot;nav-tabContent&quot;&gt;
 
+
+
       &lt;div class&#x3D;&quot;tab-pane fade show&quot; id&#x3D;&quot;MinhasPostagens&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;nav-MinhasPostagens-tab&quot;&gt;
 
           &lt;div class&#x3D;&quot;card-columns&quot;&gt;
-              &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of user.postagem&#x27;&gt;
+              &lt;div class&#x3D;&quot;card text-center&quot; 
+              *ngFor&#x3D;&#x27;let item of user.postagem | orderBy: key : reverse&#x27; &gt;
                   &lt;div class&#x3D;&quot;card-body&quot;&gt;
                      &lt;h5 class&#x3D;&quot;card-title m-0&quot;&gt;{{item.titulo}}&lt;/h5&gt;
                      &lt;small class&#x3D;&quot;text-muted&quot;&gt;tema:{{item.tema.descricao}}&lt;/small&gt;
@@ -921,9 +1174,18 @@ export class InicioComponent implements OnInit {
       &lt;/div&gt;
 
       &lt;div class&#x3D;&quot;tab-pane fade active&quot; id&#x3D;&quot;TodasPostagens&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;nav-TodasPostagens-tab&quot;&gt;
+
+        &lt;div class&#x3D;&quot;row d-flex justify-content-center mt-5 mb-5&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+             &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;titulo&quot; placeholder&#x3D;&quot;Digite um título de postagem para pesquisar&quot;[(ngModel)]&#x3D;&#x27;tituloPost&#x27;(keyup)&#x3D;&#x27;findByTituloPostagem()&#x27;&gt; 
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
           
           &lt;div class&#x3D;&quot;card-columns&quot;&gt;
-              &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of listasPostagens&#x27;&gt;
+              &lt;div class&#x3D;&quot;card text-center&quot;
+               *ngFor&#x3D;&#x27;let item of listasPostagens | orderBy: key : reverse&#x27;&gt;
                   &lt;div class&#x3D;&quot;card-body&quot;&gt;
                      &lt;h5 class&#x3D;&quot;card-title m-0&quot;&gt;{{item.titulo}}&lt;/h5&gt;
                      &lt;small class&#x3D;&quot;text-muted&quot;&gt;tema:{{item.tema.descricao}}&lt;/small&gt;
@@ -938,11 +1200,21 @@ export class InicioComponent implements OnInit {
       &lt;/div&gt;
 
       &lt;div class&#x3D;&quot;tab-pane fade&quot; id&#x3D;&quot;PostagensTema&quot; role&#x3D;&quot;tabpanel&quot; aria-labelledby&#x3D;&quot;nav-PostagensTema-tab&quot;&gt;
+        &lt;div class&#x3D;&quot;row d-flex justify-content-center mt-5 mb-5&quot;&gt;
+          &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+             &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;tema&quot; placeholder&#x3D;&quot;Digite um tema para pesquisar&quot;
+             [(ngModel)]&#x3D;&#x27;nomeTema&#x27;(keyup)&#x3D;&#x27;findByNomeTema()&#x27;&gt; 
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
 
           &lt;div class&#x3D;&quot;card-columns&quot; *ngFor&#x3D;&#x27;let tema of listaTemas&#x27;&gt;
-              &lt;div class&#x3D;&quot;card text-center&quot; *ngFor&#x3D;&#x27;let item of tema.postagem&#x27;&gt;
+              &lt;div class&#x3D;&quot;card text-center&quot; 
+              *ngFor&#x3D;&#x27;let item of tema.postagem | orderBy: key : reverse &#x27;&gt;
                   &lt;div class&#x3D;&quot;card-body&quot;&gt;
                      &lt;h5 class&#x3D;&quot;card-title m-0&quot;&gt;{{item.titulo}}&lt;/h5&gt;
+                    
                      &lt;p class&#x3D;&quot;card-text mt-3&quot;&gt;{{item.texto}}&lt;/p&gt;
                      &lt;p class&#x3D;&quot;card-text&quot;&gt;&lt;small class&#x3D;&quot;text-muted&quot;&gt;{{item.data | date: &#x27;dd/mm/yyyy&#x27;}} ás {{item.data | date: &#x27;HH:mm&#x27;}}&lt;/small&gt; &lt;/p&gt;   
                      
@@ -1056,8 +1328,8 @@ export class InicioComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container-fluid" id="img-bg">  <div class="row d-flex align-items-center ml-4">                             <div class="col-md-6 glass mt-5">                  <h1 class="text-center fs-54">Seja bem vinde!</h1>                  <h5 class="text-center fs-18">Expresse aqui os seus pensamentos e pensamentos</h5>                  <div class="row justify-content-center">                      <button class="btn btn-light mt-4 mb-4" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>                      <a class="btn btn-outline-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>                  </div>              </div>          </div></div><div class="container" id="postagens">  <nav class="d-flex justify-content-center">      <div class="nav nav-tabs" id="nav-tab" role="tablist">        <button (click)=\'findByIdUser()\' class="nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="true">Minhas postagens</button>        <button class="nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab" data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens" aria-selected="false">Todas as postagens</button>        <button class="nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab" data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema" aria-selected="false">Postagens por tema</button>            </div>    </nav>    <div class="tab-content mt-5" id="nav-tabContent">      <div class="tab-pane fade show" id="MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">          <div class="card-columns">              <div class="card text-center" *ngFor=\'let item of user.postagem\'>                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                     <small class="text-muted">tema:{{item.tema.descricao}}</small>                     <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                                           <a [routerLink]="[\'/postagem-edit\', item.id]" class="text-info mr-3" href="">Editar</a>                     <a [routerLink]="[\'/postagem-delete\', item.id]" class="text-danger" href="">Apagar</a>                  </div>              </div>          </div>      </div>      <div class="tab-pane fade active" id="TodasPostagens" role="tabpanel" aria-labelledby="nav-TodasPostagens-tab">                    <div class="card-columns">              <div class="card text-center" *ngFor=\'let item of listasPostagens\'>                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                     <small class="text-muted">tema:{{item.tema.descricao}}</small>                     <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                      <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small> </p>                       </div>              </div>          </div>      </div>      <div class="tab-pane fade" id="PostagensTema" role="tabpanel" aria-labelledby="nav-PostagensTema-tab">          <div class="card-columns" *ngFor=\'let tema of listaTemas\'>              <div class="card text-center" *ngFor=\'let item of tema.postagem\'>                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                     <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                                             <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small> </p>                      </div>              </div>          </div>            </div>    </div></div><!-- Vertically centered modal --><div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentrelizado" aria-hidden="true">  <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">          <div class="modal-header">              <h5 class="modal-title" id="TituloModalCentralizado">Nova postagem</h5>              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">              <span aria-hidden="true">&times;</span>              </button>          </div>          <div class="modal-body">                            <div class="form-group">                  <label for="titulo">Título</label>                  <input [(ngModel)]=\'postagem.titulo\' type="text" class="form-control" id="titulo" placeholder="Digite o título">              </div>              <div class="form-group">                  <label for="texto">Texto</label>                  <textarea [(ngModel)]=\'postagem.texto\' class="form-control" name="texto" id="texto" rows="3"></textarea>              </div>              <div class="form-group">                  <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink=\'/tema\'>Cadastre um novo</a>: </label>                  <select name="tema" id="" class="form-control" [(ngModel)]=\'idTema\' (change)=\'findByIdTema()\'>                      <option *ngFor=\'let item of listaTemas\' value="{{item.id}}">{{item.descricao}}</option>                  </select>              </div>          </div>          <div class="modal-footer">              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>              <button type="button" class="btn btn-success" data-dismiss="modal" (click)=\'publicar()\'>Publicar</button>          </div>      </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid" id="img-bg">  <div class="row d-flex align-items-center ml-4">                             <div class="col-md-6 glass mt-5">                  <h1 class="text-center fs-54">Seja bem vinde!</h1>                  <h5 class="text-center fs-18">Expresse aqui os seus pensamentos e pensamentos</h5>                  <div class="row justify-content-center">                      <button class="btn btn-light mt-4 mb-4" data-toggle="modal" data-target="#novaPostagem">Nova Postagem</button>                      <a class="btn btn-outline-light mt-4 ml-3 mb-4" href="#postagens">Ver Postagens</a>                     <!--  *ngIf=\'authService.adm()\' -->                  </div>              </div>          </div></div><div class="container" id="postagens">  <nav class="d-flex justify-content-center">      <div class="nav nav-tabs" id="nav-tab" role="tablist">        <button (click)=\'findByIdUser()\' class="nav-link text-secondary font-weight-bold" id="nav-MinhasPostagens-tab" data-toggle="tab" href="#MinhasPostagens" role="tab" aria-controls="nav-MinhasPostagens" aria-selected="true">Minhas postagens</button>        <button class="nav-link active text-secondary font-weight-bold" id="nav-TodasPostagens-tab" data-toggle="tab" href="#TodasPostagens" role="tab" aria-controls="nav-TodasPostagens" aria-selected="false">Todas as postagens</button>        <button class="nav-link text-secondary font-weight-bold" id="nav-PostagensTema-tab" data-toggle="tab" href="#PostagensTema" role="tab" aria-controls="nav-PostagensTema" aria-selected="false">Postagens por tema</button>            </div>    </nav>    <div class="tab-content mt-5" id="nav-tabContent">      <div class="tab-pane fade show" id="MinhasPostagens" role="tabpanel" aria-labelledby="nav-MinhasPostagens-tab">          <div class="card-columns">              <div class="card text-center"               *ngFor=\'let item of user.postagem | orderBy: key : reverse\' >                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                     <small class="text-muted">tema:{{item.tema.descricao}}</small>                     <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                                           <a [routerLink]="[\'/postagem-edit\', item.id]" class="text-info mr-3" href="">Editar</a>                     <a [routerLink]="[\'/postagem-delete\', item.id]" class="text-danger" href="">Apagar</a>                  </div>              </div>          </div>      </div>      <div class="tab-pane fade active" id="TodasPostagens" role="tabpanel" aria-labelledby="nav-TodasPostagens-tab">        <div class="row d-flex justify-content-center mt-5 mb-5">          <div class="col-md-4">            <div class="form-group">             <input type="text" class="form-control" id="titulo" placeholder="Digite um título de postagem para pesquisar"[(ngModel)]=\'tituloPost\'(keyup)=\'findByTituloPostagem()\'>             </div>          </div>        </div>                    <div class="card-columns">              <div class="card text-center"               *ngFor=\'let item of listasPostagens | orderBy: key : reverse\'>                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                     <small class="text-muted">tema:{{item.tema.descricao}}</small>                     <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                      <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small> </p>                       </div>              </div>          </div>      </div>      <div class="tab-pane fade" id="PostagensTema" role="tabpanel" aria-labelledby="nav-PostagensTema-tab">        <div class="row d-flex justify-content-center mt-5 mb-5">          <div class="col-md-4">            <div class="form-group">             <input type="text" class="form-control" id="tema" placeholder="Digite um tema para pesquisar"             [(ngModel)]=\'nomeTema\'(keyup)=\'findByNomeTema()\'>             </div>          </div>        </div>          <div class="card-columns" *ngFor=\'let tema of listaTemas\'>              <div class="card text-center"               *ngFor=\'let item of tema.postagem | orderBy: key : reverse \'>                  <div class="card-body">                     <h5 class="card-title m-0">{{item.titulo}}</h5>                                         <p class="card-text mt-3">{{item.texto}}</p>                     <p class="card-text"><small class="text-muted">{{item.data | date: \'dd/mm/yyyy\'}} ás {{item.data | date: \'HH:mm\'}}</small> </p>                                             <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small> </p>                      </div>              </div>          </div>            </div>    </div></div><!-- Vertically centered modal --><div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentrelizado" aria-hidden="true">  <div class="modal-dialog modal-dialog-centered" role="document">      <div class="modal-content">          <div class="modal-header">              <h5 class="modal-title" id="TituloModalCentralizado">Nova postagem</h5>              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">              <span aria-hidden="true">&times;</span>              </button>          </div>          <div class="modal-body">                            <div class="form-group">                  <label for="titulo">Título</label>                  <input [(ngModel)]=\'postagem.titulo\' type="text" class="form-control" id="titulo" placeholder="Digite o título">              </div>              <div class="form-group">                  <label for="texto">Texto</label>                  <textarea [(ngModel)]=\'postagem.texto\' class="form-control" name="texto" id="texto" rows="3"></textarea>              </div>              <div class="form-group">                  <label for="tema">Escolha um tema ou <a data-dismiss="modal" routerLink=\'/tema\'>Cadastre um novo</a>: </label>                  <select name="tema" id="" class="form-control" [(ngModel)]=\'idTema\' (change)=\'findByIdTema()\'>                      <option *ngFor=\'let item of listaTemas\' value="{{item.id}}">{{item.descricao}}</option>                  </select>              </div>          </div>          <div class="modal-footer">              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>              <button type="button" class="btn btn-success" data-dismiss="modal" (click)=\'publicar()\'>Publicar</button>          </div>      </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertasComponent', 'selector': 'app-alertas'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CadastrarComponent', 'selector': 'app-cadastrar'},{'name': 'ContatoComponent', 'selector': 'app-contato'},{'name': 'EntrarComponent', 'selector': 'app-entrar'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InicioComponent', 'selector': 'app-inicio'},{'name': 'MenuComponent', 'selector': 'app-menu'},{'name': 'PostagemDeleteComponent', 'selector': 'app-postagem-delete'},{'name': 'PostagemEditComponent', 'selector': 'app-postagem-edit'},{'name': 'RodapeComponent', 'selector': 'app-rodape'},{'name': 'SobreComponent', 'selector': 'app-sobre'},{'name': 'TemaComponent', 'selector': 'app-tema'},{'name': 'TemaDeleteComponent', 'selector': 'app-tema-delete'},{'name': 'TemaEditComponent', 'selector': 'app-tema-edit'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'InicioComponent'};
 </script>

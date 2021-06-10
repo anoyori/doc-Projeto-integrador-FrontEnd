@@ -38,7 +38,7 @@
 
 <ol class="breadcrumb">
   <li>Injectables</li>
-  <li>AuthService</li>
+  <li>AlertasService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -56,7 +56,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/service/auth.service.ts</code>
+            <code>src/app/service/alertas.service.ts</code>
         </p>
 
 
@@ -76,19 +76,17 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#atualizar">atualizar</a>
+                                    <span class="modifier">Private</span>
+                                <a href="#showAlert">showAlert</a>
                             </li>
                             <li>
-                                <a href="#cadastrar">cadastrar</a>
+                                <a href="#showAlertDanger">showAlertDanger</a>
                             </li>
                             <li>
-                                <a href="#entrar">entrar</a>
+                                <a href="#showAlertInfo">showAlertInfo</a>
                             </li>
                             <li>
-                                <a href="#getByIdUser">getByIdUser</a>
-                            </li>
-                            <li>
-                                <a href="#logado">logado</a>
+                                <a href="#showAlertSuccess">showAlertSuccess</a>
                             </li>
                         </ul>
                     </td>
@@ -108,12 +106,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+<code>constructor(bsModalService: BsModalService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/service/auth.service.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/service/alertas.service.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -131,10 +129,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>http</td>
+                                                        <td>bsModalService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                                    <code>BsModalService</code>
                                                         </td>
                                                   
                                                     <td>
@@ -160,26 +158,28 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="atualizar"></a>
+                    <a name="showAlert"></a>
                     <span class="name">
                         <b>
-                            atualizar
+                            <span class="modifier">Private</span>
+                            showAlert
                         </b>
-                        <a href="#atualizar"><span class="icon ion-ios-link"></span></a>
+                        <a href="#showAlert"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>atualizar(user: <a href="../classes/User.html">User</a>)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showAlert(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="26"
-                            class="link-to-prism">src/app/service/auth.service.ts:26</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="14"
+                            class="link-to-prism">src/app/service/alertas.service.ts:14</a></div>
                 </td>
             </tr>
 
@@ -199,9 +199,21 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>user</td>
+                                    <td>message</td>
                                     <td>
-                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
 
                                     <td>
@@ -216,7 +228,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                     <div class="io-description">
@@ -230,26 +242,26 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="cadastrar"></a>
+                    <a name="showAlertDanger"></a>
                     <span class="name">
                         <b>
-                            cadastrar
+                            showAlertDanger
                         </b>
-                        <a href="#cadastrar"><span class="icon ion-ios-link"></span></a>
+                        <a href="#showAlertDanger"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>cadastrar(user: <a href="../classes/User.html">User</a>)</code>
+<code>showAlertDanger(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">src/app/service/auth.service.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/service/alertas.service.ts:20</a></div>
                 </td>
             </tr>
 
@@ -269,9 +281,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>user</td>
+                                    <td>message</td>
                                     <td>
-                                                <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
 
                                     <td>
@@ -286,7 +298,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                     <div class="io-description">
@@ -300,26 +312,26 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="entrar"></a>
+                    <a name="showAlertInfo"></a>
                     <span class="name">
                         <b>
-                            entrar
+                            showAlertInfo
                         </b>
-                        <a href="#entrar"><span class="icon ion-ios-link"></span></a>
+                        <a href="#showAlertInfo"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>entrar(userLogin: <a href="../classes/UserLogin.html">UserLogin</a>)</code>
+<code>showAlertInfo(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/service/auth.service.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/service/alertas.service.ts:28</a></div>
                 </td>
             </tr>
 
@@ -339,9 +351,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>userLogin</td>
+                                    <td>message</td>
                                     <td>
-                                                <code><a href="../classes/UserLogin.html" target="_self" >UserLogin</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
 
                                     <td>
@@ -356,7 +368,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>Observable&lt;UserLogin&gt;</code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                     <div class="io-description">
@@ -370,26 +382,26 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="getByIdUser"></a>
+                    <a name="showAlertSuccess"></a>
                     <span class="name">
                         <b>
-                            getByIdUser
+                            showAlertSuccess
                         </b>
-                        <a href="#getByIdUser"><span class="icon ion-ios-link"></span></a>
+                        <a href="#showAlertSuccess"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>getByIdUser(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+<code>showAlertSuccess(message: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="30"
-                            class="link-to-prism">src/app/service/auth.service.ts:30</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/service/alertas.service.ts:24</a></div>
                 </td>
             </tr>
 
@@ -409,9 +421,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>id</td>
+                                    <td>message</td>
                                     <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                     </td>
 
                                     <td>
@@ -426,50 +438,11 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../classes/User.html" target="_self" >Observable&lt;User&gt;</a></code>
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                     </div>
                     <div class="io-description">
                         
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="logado"></a>
-                    <span class="name">
-                        <b>
-                            logado
-                        </b>
-                        <a href="#logado"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>logado()</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="34"
-                            class="link-to-prism">src/app/service/auth.service.ts:34</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
                     </div>
                 </td>
             </tr>
@@ -481,57 +454,37 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient } from &#x27;@angular/common/http&#x27;;
-import { Injectable } from &#x27;@angular/core&#x27;;
-
-import { User } from &#x27;../model/User&#x27;;
-import { Observable, of } from &#x27;rxjs&#x27;;
-import { UserLogin } from &#x27;../model/UserLogin&#x27;;
-import { environment } from &#x27;src/environments/environment.prod&#x27;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { BsModalRef, BsModalService } from &#x27;ngx-bootstrap/modal&#x27;
+import { AlertasComponent } from &#x27;../alertas/alertas.component&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
-export class AuthService {
+export class AlertasService {
 
   constructor(
-    private http: HttpClient
+    private bsModalService: BsModalService
   ) { }
 
-  entrar(userLogin: UserLogin): Observable&lt;UserLogin&gt; {
-    return this.http.post&lt;UserLogin&gt;(&#x60;${environment.server}/usuarios/logar&#x60;, userLogin)
+  private showAlert(message: string, type: string){
+    const bsModalRef: BsModalRef &#x3D; this.bsModalService.show(AlertasComponent)
+    bsModalRef.content.type &#x3D; type
+    bsModalRef.content.message &#x3D; message
   }
 
-  cadastrar(user: User): Observable&lt;User&gt; {
-    return this.http.post&lt;User&gt;(&#x60;${environment.server}/usuarios/cadastrar&#x60;, user)
+  showAlertDanger(message: string){
+    this.showAlert(message, &#x27;danger&#x27;)
   }
 
-  atualizar(user: User): Observable&lt;User&gt; {
-    return this.http.put&lt;User&gt;(&#x60;${environment.server}/usuarios/cadastrar&#x60;, user)
+  showAlertSuccess(message: string){
+    this.showAlert(message, &#x27;success&#x27;)
   }
 
-  getByIdUser(id: number): Observable&lt;User&gt; {
-    return this.http.get&lt;User&gt;(&#x60;${environment.server}/usuarios/${id}&#x60;)
+  showAlertInfo(message: string){
+    this.showAlert(message, &#x27;info&#x27;)
   }
 
-  logado() {
-    let ok: boolean &#x3D; false
-
-    if (environment.token !&#x3D; &#x27;&#x27;) {
-      ok &#x3D; true
-    }
-
-    return ok
-  }
- /*  adm(){
-    let ok: boolean &#x3D; false
-
-    if (environment.tipo !&#x3D; &#x27;&#x27;) {
-      ok &#x3D; true
-    }
-
-    return ok
-  } */
 }
 </code></pre>
     </div>
@@ -566,7 +519,7 @@ export class AuthService {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
-            var COMPODOC_CURRENT_PAGE_URL = 'AuthService.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'AlertasService.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 
